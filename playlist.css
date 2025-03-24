@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: 'Pacifico', cursive; /* Cursive Font */
+    background: linear-gradient(135deg, #001f3f, #55a3d7);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background: #01080f;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Pacifico', cursive; /* Cursive Font */
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #00aaff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    padding: 10px 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #00aaff;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 120px;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+.dropdown-menu li a {
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.dropdown-menu li:hover {
+    background: #00aaff;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Playlist Section */
+.playlist-container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.recommended, .currently-playing {
+    background: rgba(0, 191, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 24px;
+    color: #00aaff;
+    font-family: 'Pacifico', cursive; /* Cursive Font */
+}
+
+.song-item {
+    list-style: none;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Pacifico', cursive; /* Cursive Font */
+}
+
+button {
+    background: #00aaff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+    font-family: 'Pacifico', cursive; /* Cursive Font */
+}
+
+button:hover {
+    background: #0080ff;
+}

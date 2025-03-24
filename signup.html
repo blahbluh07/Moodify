@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Moodify</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">MOODIFY</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="playlist.html">Playlist</a></li>
+            <li>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Logo Container -->
+    <div class="logo-container">
+        <h1 class="logo-text">MOODIFY</h1>
+        <p class="slogan">Vibe. Feel. Repeat.</p>
+    </div>
+
+    <!-- Sign-Up Form Container -->
+    <div class="signup-container">
+        <div class="signup-card">
+            <h1 class="title">Sign Up</h1>
+
+            <form id="signup-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Choose a username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                </div>
+
+                <div class="action-buttons">
+                    <button type="submit" class="signup-btn" id="signup-btn">Sign Up</button>
+                    <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

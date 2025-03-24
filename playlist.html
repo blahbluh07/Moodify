@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist - Moodify</title>
+    <link rel="stylesheet" href="playlist.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Moodify</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Mode ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Text</a></li>
+                </ul>
+            </li>
+            <li><a href="playlist.html" class="active">Playlist</a></li>
+        </ul>
+    </nav>
+
+    <!-- Playlist Section -->
+    <div class="playlist-container">
+
+        <!-- Recommended Songs -->
+        <div class="recommended">
+            <h1>Recommended Songs</h1>
+            <ul id="recommended-list">
+                <li class="song-item">Song 1 - Artist A <button onclick="playSong('Song 1')">▶ Play</button></li>
+                <li class="song-item">Song 2 - Artist B <button onclick="playSong('Song 2')">▶ Play</button></li>
+                <li class="song-item">Song 3 - Artist C <button onclick="playSong('Song 3')">▶ Play</button></li>
+            </ul>
+        </div>
+
+        <!-- Currently Playing -->
+        <div class="currently-playing">
+            <h1>Currently Playing</h1>
+            <div id="now-playing">No song playing</div>
+        </div>
+
+    </div>
+
+    <script src="playlist.js"></script>
+</body>
+</html>

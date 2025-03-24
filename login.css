@@ -1,0 +1,257 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 1000;
+}
+
+/* Logo inside Navbar */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigation Links */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #2575fc;
+}
+
+/* Search Bar */
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 10px rgba(37, 117, 252, 0.5);
+}
+
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+/* MOODIFY Centered Styling */
+.logo-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.logo-text {
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.slogan {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #a0c4ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400&display=swap');
+
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-right: 50px;
+}
+
+/* Login Card */
+.login-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    width: 380px;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    animation: slide-up 1s ease-in-out forwards;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Login Card Hover Effect */
+.login-card:hover {
+    transform: scale(1.05);
+}
+
+/* Title */
+h1.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid #2575fc;
+}
+
+/* Error Styling */
+.input-error {
+    border: 2px solid red !important;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+    background: #2575fc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.login-btn:hover {
+    background: #6a11cb;
+    transform: scale(1.05);
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: none;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #2575fc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin-top: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Shake Effect */
+.shake {
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+/* Signup Link */
+.signup-link {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #2575fc;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    color: #6a11cb;
+}
